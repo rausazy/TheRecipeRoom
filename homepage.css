@@ -72,21 +72,25 @@
         font-weight: 300;
     }
 
-    .recipes{
+    .recipes1, .recipes2{
         display: flex;
         justify-content: space-evenly;
         text-align: center;
         
     }
 
-    .recipe1 img, .recipe2 img, .recipe3 img, .recipe4 img, .recipe5 img{
+    .recipes2{
+        display: none;
+    }
+
+    .recipe1 img, .recipe2 img, .recipe3 img, .recipe4 img, .recipe5 img, .recipe6 img, .recipe7 img, .recipe8 img, .recipe9 img, .recipe10 img{
         width: 200px;
         height: 150px;
         border: 2px solid black;
         box-shadow: 10px 10px rgb(185, 182, 182);
     }
 
-    .recipe1 h4, .recipe2 h4, .recipe3 h4, .recipe4 h4, .recipe5 h4{
+    .recipe1 h4, .recipe2 h4, .recipe3 h4, .recipe4 h4, .recipe5 h4, .recipe6 h4, .recipe7 h4, .recipe8 h4, .recipe9 h4, .recipe10 h4{
         font-family: "Gelasio", sans-serif;
         font-style: italic;
         font-weight: 100;
@@ -95,12 +99,33 @@
         text-align: center;
     }
 
-    .recipe1 p, .recipe2 p, .recipe3 p, .recipe4 p, .recipe5 p{
+    .recipe1 p, .recipe2 p, .recipe3 p, .recipe4 p, .recipe5 p, .recipe6 p, .recipe7 p, .recipe8 p, .recipe9 p, .recipe10 p{
         font-family: "Inter", sans-serif;
         font-size: 14px;
         text-align: center;
     }
 
+    .view-more{
+        text-align: center;
+    }
+    
+    #viewMoreButton{
+        margin-top: 20px;
+        display: inline-block;
+        padding: 10px 30px;
+        border-radius: 5px;
+        background-color: #58697A;
+        color: white;
+        font-family: "Inter", sans-serif;
+        cursor: pointer;
+        transition: all .3s ease-in;
+    }
+
+    #viewMoreButton:hover{
+        background-color: black;
+        border-color: #58697A;
+        color: #58697A;
+    }
     
 
 
