@@ -1,57 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Galada&family=Inter:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Galada&family=Gelasio:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Galada&family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Galada&family=Gelasio:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@100..900&display=swap");
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #dfdfdf;
 
+  #icon {
+    margin: 30px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: #58697a;
+  }
+  .recipeboxes img {
+    width: 250px;
+    height: 200px;
+    margin-top: 0px;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: #DFDFDF;
+  .recipeboxes {
+    transition: 0.2s ease-in-out;
+  }
+  .recipeboxes:hover {
+    transform: scale(1.1);
+  }
 
-    #icon {
-        margin: 30px;
-        margin-bottom: 20px;
-        font-size: 50px;
-        color: #58697A;
-        
-    } 
-    .recipeboxes img {
-        width:250px;
-        height: 200px;
-        margin-top: 0px;
-        border-radius: 5px;
-        border: 1px solid black;
-        
-    }
+  .recipesection {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px;
+  }
 
-    .recipeboxes {
-        transition: .2s ease-in-out;
-    }
-    .recipeboxes:hover {
-        transform: scale(1.1);
-    }
-
-    .recipesection {
-        display: flex;
-        text-align: center;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 50px;
-    }
-
-    .recipe-titles{
-        font-family: "Gelasio", sans-serif;
-        font-style: italic;
-        margin-top: 5px;
-        
-    }
-
-    
-
-
-    
-
-    
+  .recipe-titles {
+    font-family: "Gelasio", sans-serif;
+    font-style: italic;
+    margin-top: 5px;
+  }
+}
+.button_flexing {
+  display: flex;
 }
