@@ -97,9 +97,9 @@
         height: 50px
     }
 
-    .text-c2 p{
+    .description-c2{
         font-family: "Gelasio", sans-serif;
-        font-size:100px;
+        font-size:50px;
         font-style: italic;
         text-align: center;
         color: #58697A;
@@ -149,15 +149,16 @@
         margin-top: 5px;
         text-align: center;
         font-size: 80px;
+        color: black;
         
     }
 
     .category p {
         font-family: "Inter", sans-serif;
-        font-size: 20px;
+        font-size: 100px;
         text-align: center;
         align-items: center;
-        padding: 30px;
+        padding: 10px;
         font-style: italic;
         color: #58697A;
 
@@ -192,8 +193,8 @@
         margin-left: 35px;
     }
 
-    .hometitle{
-        font-size: 20px;
+    .section1 h1{
+        font-size: 50px;
     }
 
     .heart {
@@ -206,19 +207,26 @@
         height: 50px;
     }
 
-    .text-c2{
-        font-size: 15px;
+    .description-c2{
+        font-size: 25px;
         padding: 20px;
         margin: 20px;
+    }
+
+    .logo1 img {
+        width: 100px;
+        height: 80px;
+        margin-bottom: 20px;
     }
 
     .spoon img{
         width: 50px;
         height: 50px;
+        margin-top: 20px;
     }
 
-    .latestrecipes {
-        font-size: 40px;
+    .section3 h1 {
+        font-size: 50px;
     }
 
     .category {

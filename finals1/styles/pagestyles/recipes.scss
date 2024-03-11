@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #DFDFDF;
+
+    .recipeboxes img {
+        width:250px;
+        height: 200px;
+        margin-top: 20px;
+        border-radius: 5px;
+        border: 1px solid black;
+        
+    }
+
+    .recipeboxes {
+        transition: .2s ease-in-out;
+    }
+    .recipeboxes:hover {
+        transform: scale(1.1);
+    }
+
+    .recipesection {
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 50px;
+    }
+
+    .recipe-titles{
+        font-family: "Gelasio", sans-serif;
+        font-style: italic;
+        margin-top: 5px;
+        
+    }
+
+    
+
+
+    
+
+    
+}

@@ -1,12 +1,21 @@
 import "@/styles/globals.css";
 
 
-/*Styles of Header and Footer*/
+/*SCSS of Header and Footer*/
 import "@/styles/HeaderFooter/header.scss"
 import "@/styles/HeaderFooter/footer.scss"
 
-/*Styles of index*/
+/*SCSS of index*/
 import "@/styles/pagestyles/home.scss"
+
+/*SCSS of the Recipe Page*/
+import "@/styles/pagestyles/recipes.scss"
+
+/*SCSS of About Us Page*/
+import "@/styles/pagestyles/aboutus.scss"
+
+/*SCSS of Contact Us Page*/
+
 
 /*Import for Header and Footer*/
 import Header from "@/Components/Constants/Header";
@@ -21,7 +30,6 @@ function App({ Component, pageProps }) {
   <>
     <Header />
   <Component {...pageProps} />
-  
   <Footer />
   </>
   )
