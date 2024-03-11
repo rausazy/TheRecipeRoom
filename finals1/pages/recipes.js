@@ -4,6 +4,7 @@ import path from "path";
 import Head from "next/head";
 import { useState } from "react"
 import Link from "next/link";
+import { Icon } from 'semantic-ui-react';
 
 
 
@@ -31,8 +32,8 @@ export default function Recipe ({ recipe }) {
         <link rel="icon" href="assets/logo1.png" />
       </Head>
 
-     
-
+      <Link href="/"><Icon className="chevron left icon" id = "icon"/></Link>
+      
             <section className="recipesection">
             {recipe.map((recipes) => {
                 return (
@@ -49,9 +50,6 @@ export default function Recipe ({ recipe }) {
                     </Link> 
                 );
             })}
-                
-
-
         </section>
         </>
         

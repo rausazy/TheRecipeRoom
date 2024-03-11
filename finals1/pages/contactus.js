@@ -1,6 +1,6 @@
 import Head from "next/head"
 import Image from "next/image";
-import conus from '../public/assets/conus.png'
+import logo from '../public/assets/origlogo.png'
 export default function ContactUS(){
     return(
         <>
@@ -13,38 +13,36 @@ export default function ContactUS(){
         </Head>
 
             <div className ="contact-title">
-                <h1>
-                    CONTACT US
-                </h1>
+                <h1 className="contacttitle">CONTACT US</h1>
             </div>
-            <div className = "body">
-                <div className = "contact">
+            <div className = "contents">
+                <div className = "contact-desc">
                     <p>Have a question, suggestion, or just want to share your culinary triumphs with us? We'd love to hear from you! 
                         Contact The Recipe Room through the following channels:
                     </p>
+                    
                     <div className = "list">
                         <ul className = "contact-list">
                             <li>Email: support@reciperoom.com</li>
                             <li>Phone: 0912-345-6789</li>
                         </ul>
                     </div>
-                </div>
+                    </div>
+                
                 <div className = "inquiry">
-                    <p>
-                        General Inquiries:<br/> 
-                        For general inquiries or feedback, drop us a line!
-                    </p>
+                    <p>General Inquiries:</p>
+                    <p>For general inquiries or feedback, drop us a line!</p>
                     <div className = "list">
                         <ul className = "info-email">
                             <li>Email: info@reciperoom.com</li>
                         </ul>
                     </div>
-                    <div className = "container">
+                    <div className = "contact-img">
                         <Image
-                            src = {conus} 
+                            src = {logo} 
                             alt = "Contact Us"
-                            width = '200'
-                            height = '200'
+                            width = '300'
+                            height = '100'
                         />
                     </div>    
                 </div>
