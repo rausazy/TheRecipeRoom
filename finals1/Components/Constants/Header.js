@@ -31,9 +31,9 @@ export default function Header ({recipes}) {
 
         <input type='checkbox' id='check' />
             
-            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            <label for="check" className="open-menu"><i className="fas fa-bars"></i></label>
 
-                <span class="menu">
+                <span className="menu">
                     <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
                     <li><a href="/index">HOME</a></li>
                     <li><a href="/recipes">RECIPE</a></li>
@@ -42,8 +42,8 @@ export default function Header ({recipes}) {
                 </span>
             
         <form>
-            <div class="search">
-                <input class="search-input" type="search" placeholder="Search Recipes..."></input>
+            <div className="search">
+                <input className="search-input" type="search" placeholder="Search Recipes..."></input>
                 
             </div>
         </form>

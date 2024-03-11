@@ -121,7 +121,7 @@
         display: none;
     }
 
-    .search {
+    .search-input{
         display: none;
     }
 
@@ -151,7 +151,7 @@
 
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+@media only screen and (max-width: 768px) {
 
     a {
         font-family: "Inter", sans-serif;

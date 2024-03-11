@@ -31,8 +31,8 @@ export default function HomePage({recipe}) {
       <div className="container"> 
       <form>
         <div className="mobile">
-            <div class="search-home">
-                <input class="search-input" type="search" placeholder="Search Recipes..."></input>
+            <div className="search-home">
+                <input className="search-bar" type="search" placeholder="Search Recipes..."></input>
             </div>
             </div>
         </form>

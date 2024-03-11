@@ -186,11 +186,12 @@
 
 
 @media (max-width: 320px) {
-    .search-home{
+    .search-home {
         display: block;
-        width: 200px;
-        margin-top: 20px;
+        width: 250px;
+        margin-top: 10px;
         margin-left: 35px;
+        border-radius: 3px;
     }
 
     .section1 h1{
