@@ -40,16 +40,7 @@ export default function Header ({recipes}) {
                     <li><a href="/aboutus">ABOUT US</a></li>
                     <li><a href="/contactus">CONTACT US</a></li>    
                 </span>
-            
-        <form>
-            <div className="search">
-                <input className="search-input" type="search" placeholder="Search Recipes..."></input>
-                
-            </div>
-        </form>
-
         </div>
-
         
         </>
     );

@@ -53,6 +53,10 @@
         font-weight: 100;
     }
 
+    .section1 {
+        border-bottom: 3px solid #58697A;
+    }
+
     .viewmore {
         display: block;
         margin: auto;
@@ -69,10 +73,14 @@
         width: 100px;
         font-size: 15px;
     }
+
     .viewmore:hover {
         opacity: .5;
         cursor: pointer;
     }
+
+   
+
 }
 
 

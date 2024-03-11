@@ -8,6 +8,47 @@
   padding: 0;
   background-color: #dfdfdf;
 
+  .container {
+    color: black;
+    display: flex;
+    justify-content: end;
+  }
+
+  .searchbar {
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 200px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 20px;
+    text-align: center;
+  }
+
+  .recipebtn {
+    display: block;
+    margin: auto;
+    height: 40px;
+    padding: 0 20px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #58697A;
+    color: white;
+    transition: .3s linear;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100px;
+    font-size: 15px;
+}
+.recipebtn:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
+  input {
+    color: black;
+  }
+
   .recipeboxes img {
     width: 250px;
     height: 200px;
@@ -40,5 +81,5 @@
 .button_flexing {
   display: flex;
   margin-top: 30px;
-  
+
 }

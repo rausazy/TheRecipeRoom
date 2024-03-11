@@ -7,9 +7,13 @@ import Link from "next/link";
 
 export default function Recipe({ recipe }) {
   const [selectedCategory, setSelectedCategory] = useState(null);
-
+  const [searchTerm, setSearchTerm] = useState("");
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
+  };
+
+  const handleSearch = (event) => {
+    setSearchTerm(event.target.value);
   };
 
   let filteredRecipe = recipe;
@@ -17,6 +21,13 @@ export default function Recipe({ recipe }) {
     filteredRecipe = recipe.filter((r) => r.Category === selectedCategory);
   }
 
+  const filteredSearchRecipe = filteredRecipe.filter(
+    (recipe) =>
+      recipe &&
+      recipe.Recipe_Name &&
+      typeof recipe.Recipe_Name === "string" &&
+      recipe.Recipe_Name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
   return (
     <>
       <Head>
@@ -32,54 +43,59 @@ export default function Recipe({ recipe }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="assets/logo1.png" />
       </Head>
+
+      <div className="container"> 
+      <input className="searchbar" placeholder="Search Recipes..." onKeyUp={handleSearch}></input>
+      <div className="search"></div>
+      </div>
       <section className="button_flexing">
         <button
-            onClick={() => handleCategoryClick(null)}
-            className="viewmore-section3"
-            >
-            All
-            </button>
-            <button
-            onClick={() => handleCategoryClick("Breakfast")}
-            className="viewmore-section3"
-            >
-            Breakfast
-            </button>
-            <button
-            onClick={() => handleCategoryClick("Lunch")}
-            className="viewmore-section3"
-            >
-            Lunch
-            </button>
-            <button
-            onClick={() => handleCategoryClick("Salad")}
-            className="viewmore-section3"
-            >
-            Salad
-            </button>
-            <button
-            onClick={() => handleCategoryClick("Dinner")}
-            className="viewmore-section3"
-            >
-            Dinner
-            </button>
+          onClick={() => handleCategoryClick(null)}
+          className="recipebtn"
+        >
+          All
+        </button>
+        <button
+          onClick={() => handleCategoryClick("Breakfast")}
+          className="recipebtn"
+        >
+          Breakfast
+        </button>
+        <button
+          onClick={() => handleCategoryClick("Lunch")}
+          className="recipebtn"
+        >
+          Lunch
+        </button>
+        <button
+          onClick={() => handleCategoryClick("Salad")}
+          className="recipebtn"
+        >
+          Salad
+        </button>
+        <button
+          onClick={() => handleCategoryClick("Dinner")}
+          className="recipebtn"
+        >
+          Dinner
+        </button>
       </section>
 
       <section className="recipesection">
-        {filteredRecipe.map((recipes) => {
+        {filteredSearchRecipe.map((recipe) => {
           return (
             <Link
               className="recipeboxes"
-              href={`/view/${recipes.id}`}
-              key={recipes.id}
+              href={`/view/${recipe.id}`}
+              key={recipe.id}
             >
               <Image
-                src={`/recipics/${recipes.image1}`}
+                src={`/recipics/${recipe.image1}`}
                 alt=""
                 width="200"
                 height="100"
               />
-              <h5 className="recipe-titles">{recipes.Recipe_Name}</h5>
+              <h5 className="recipe-titles">{recipe.Recipe_Name}</h5>
             </Link>
           );
         })}

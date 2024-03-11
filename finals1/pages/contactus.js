@@ -37,14 +37,6 @@ export default function ContactUS(){
                             <li>Email: info@reciperoom.com</li>
                         </ul>
                     </div>
-                    <div className = "contact-img">
-                        <Image
-                            src = {logo} 
-                            alt = "Contact Us"
-                            width = '300'
-                            height = '100'
-                        />
-                    </div>    
                 </div>
             </div>
         </>

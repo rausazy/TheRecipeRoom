@@ -1,13 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import HEART from '../public/assets/HEART.png'
-import logo1 from '../public/assets/logo1.png'
-import spoon from '../public/assets/spoonandfork.png'
-import breakfast from '../public/assets/breakfast.jpg'
-import lunch from '../public/assets/lunch.jpg'
-import salad from '../public/assets/salad.jpg'
-import dinner from '../public/assets/dinner.jpg'
 import Link from "next/link";
 import fs from 'fs';
 import path from "path";
@@ -63,6 +56,7 @@ export default function HomePage({recipe}) {
           <Link className="viewmore" href="/recipes">View More</Link>
         </div>
       </section>
+
     </>
   );
 }
