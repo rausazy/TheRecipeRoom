@@ -75,6 +75,7 @@ export default function Home({recipe}) {
             />
           </div>
 
+              
           <div className="text-c2">
             <p>"Discover a world of culinary <br />inspiration with The Recipe Room, <br /> your ultimate recipe repository!"</p>
           </div>
